@@ -11,10 +11,7 @@ fun Context.urlValidation(uri: String): Boolean {
         return true
     }
     return false
-
-
 }
-
 
 fun Context.isUri(uri: Uri): String? {
     val img: String? = if (ContentResolver.SCHEME_CONTENT == uri.scheme) {
@@ -30,8 +27,8 @@ fun Context.isUri(uri: Uri): String? {
         )
     }
 
-        val imageArray = img?.split("/")?.toTypedArray()
-    if (!imageArray.isNullOrEmpty()){
+    val imageArray = img?.split("/")?.toTypedArray()
+    if (!imageArray.isNullOrEmpty()) {
         return imageArray[0]
     }
     return null
