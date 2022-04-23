@@ -40,7 +40,6 @@ class MainActivity : AppCompatActivity() {
         }
         binding.submit.setOnClickListener {
             if (urlValidation(binding.et.text.toString())) {
-                println("-------------------------")
                 setImage(binding.et.text.toString())
                 imageList.add(binding.et.text.toString())
             } else {
